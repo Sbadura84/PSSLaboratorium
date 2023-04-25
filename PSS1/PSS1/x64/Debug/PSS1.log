@@ -1,10 +1,5 @@
-﻿  ModelARX.cpp
+﻿  PSS1.cpp
 D:\Uczelnia\PSS\PSS1\PSS1\ModelARX.h(4,10): warning C4067: unexpected tokens following preprocessor directive - expected a newline
-D:\Uczelnia\PSS\PSS1\PSS1\ModelARX.cpp(15,11): warning C4566: character represented by universal-character-name '\u0105' cannot be represented in the current code page (1252)
-D:\Uczelnia\PSS\PSS1\PSS1\ModelARX.cpp(42,2): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
-D:\Uczelnia\PSS\PSS1\PSS1\ModelARX.cpp(57,2): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
-D:\Uczelnia\PSS\PSS1\PSS1\ModelARX.cpp(61,10): warning C4566: character represented by universal-character-name '\u0142' cannot be represented in the current code page (1252)
-D:\Uczelnia\PSS\PSS1\PSS1\ModelARX.cpp(61,10): warning C4566: character represented by universal-character-name '\u015B' cannot be represented in the current code page (1252)
   Regulator.cpp
 D:\Uczelnia\PSS\PSS1\PSS1\Regulator.cpp(12,10): warning C4566: character represented by universal-character-name '\u0142' cannot be represented in the current code page (1252)
 D:\Uczelnia\PSS\PSS1\PSS1\Regulator.cpp(12,10): warning C4566: character represented by universal-character-name '\u015B' cannot be represented in the current code page (1252)
