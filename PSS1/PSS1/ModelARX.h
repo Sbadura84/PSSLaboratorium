@@ -5,8 +5,8 @@
 using namespace std;
 
 class ModelARX : public siso {
-private:
-
+public:
+	//Dane defaultowe
 	int dA = 1;
 	int dB = 1;
 	vector<double> A = { 1 };
@@ -16,10 +16,10 @@ private:
 	vector<double> y;
 
 	int d = 0;
-public:
+//public:
 	double Symuluj(double = 0, double = 0);
 	ModelARX(int sizeA, int sizeB, vector<double>, vector<double>, int op);
-
+	void wypisz();
 };
 
 

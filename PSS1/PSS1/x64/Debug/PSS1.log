@@ -1,7 +1,4 @@
 ﻿  PSS1.cpp
-D:\Uczelnia\PSS\PSS1\PSS1\ModelARX.h(4,10): warning C4067: unexpected tokens following preprocessor directive - expected a newline
-  Regulator.cpp
-D:\Uczelnia\PSS\PSS1\PSS1\Regulator.cpp(12,10): warning C4566: character represented by universal-character-name '\u0142' cannot be represented in the current code page (1252)
-D:\Uczelnia\PSS\PSS1\PSS1\Regulator.cpp(12,10): warning C4566: character represented by universal-character-name '\u015B' cannot be represented in the current code page (1252)
-  Generating Code...
-  PSS1.vcxproj -> D:\Uczelnia\PSS\PSS1\x64\Debug\PSS1.exe
+D:\PSS LAB\PSSLaboratorium\PSS1\PSS1\ModelARX.h(4,10): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+D:\PSS LAB\PSSLaboratorium\PSS1\PSS1\PSS1.cpp(31,19): warning C4101: 'mop': unreferenced local variable
+  PSS1.vcxproj -> D:\PSS LAB\PSSLaboratorium\PSS1\x64\Debug\PSS1.exe

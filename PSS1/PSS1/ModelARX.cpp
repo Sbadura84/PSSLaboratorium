@@ -1,6 +1,7 @@
 ﻿#include "ModelARX.h"
 #include "siso.h"
 #include<iostream>
+#include<string>
 using namespace std;
 
 ModelARX::ModelARX(int rzA, int rzB,vector<double> mA, vector<double> mB, int op) {
@@ -60,4 +61,8 @@ double ModelARX::Symuluj(double wartosc, double zaklocenie) {
 	y[0] = tempL + tempM + zaklocenie;
 	cout << "Sygnał wyjściowy obiektu: " << y[0] << endl;
 	return y[0];
+}
+void ModelARX::wypisz() {
+	string str(A.begin(), A.end());
+	cout << str << endl;
 }
