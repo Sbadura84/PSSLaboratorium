@@ -127,17 +127,25 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Generator.cpp" />
+    <ClCompile Include="Impuls.cpp" />
     <ClCompile Include="ModelARX.cpp" />
     <ClCompile Include="PSS1.cpp" />
     <ClCompile Include="Regulator.cpp" />
     <ClCompile Include="siso.cpp" />
+    <ClCompile Include="Skok.cpp" />
     <ClCompile Include="testClass.cpp" />
+    <ClCompile Include="Trojkat.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Generator.h" />
+    <ClInclude Include="Impuls.h" />
     <ClInclude Include="ModelARX.h" />
     <ClInclude Include="Regulator.h" />
     <ClInclude Include="siso.h" />
+    <ClInclude Include="Skok.h" />
     <ClInclude Include="testClass.h" />
+    <ClInclude Include="Trojkat.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

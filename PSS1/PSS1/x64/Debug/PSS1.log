@@ -1,4 +1,49 @@
-﻿  PSS1.cpp
+﻿  Generator.cpp
+  ModelARX.cpp
 D:\PSS LAB\PSSLaboratorium\PSS1\PSS1\ModelARX.h(4,10): warning C4067: unexpected tokens following preprocessor directive - expected a newline
-D:\PSS LAB\PSSLaboratorium\PSS1\PSS1\PSS1.cpp(31,19): warning C4101: 'mop': unreferenced local variable
-  PSS1.vcxproj -> D:\PSS LAB\PSSLaboratorium\PSS1\x64\Debug\PSS1.exe
+D:\PSS LAB\PSSLaboratorium\PSS1\PSS1\ModelARX.cpp(58,2): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+D:\PSS LAB\PSSLaboratorium\PSS1\PSS1\ModelARX.cpp(73,2): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+D:\Microsoft VS\VC\Tools\MSVC\14.35.32215\include\xstring(2859,53): warning C4244: 'argument': conversion from 'double' to 'const _Elem', possible loss of data
+          with
+          [
+              _Elem=char
+          ]
+D:\Microsoft VS\VC\Tools\MSVC\14.35.32215\include\xstring(2718,1): message : see reference to function template instantiation 'void std::basic_string<char,std::char_traits<char>,std::allocator<char>>::_Construct_from_iter<double*,double*,_Size_type>(_Iter,const _Sent,_Size)' being compiled
+          with
+          [
+              _Size_type=unsigned __int64,
+              _Iter=double *,
+              _Sent=double *,
+              _Size=unsigned __int64
+          ]
+D:\Microsoft VS\VC\Tools\MSVC\14.35.32215\include\xstring(2718,37): message : see reference to function template instantiation 'void std::basic_string<char,std::char_traits<char>,std::allocator<char>>::_Construct_from_iter<double*,double*,_Size_type>(_Iter,const _Sent,_Size)' being compiled
+          with
+          [
+              _Size_type=unsigned __int64,
+              _Iter=double *,
+              _Sent=double *,
+              _Size=unsigned __int64
+          ]
+D:\PSS LAB\PSSLaboratorium\PSS1\PSS1\ModelARX.cpp(81): message : see reference to function template instantiation 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>::basic_string<std::_Vector_iterator<std::_Vector_val<std::_Simple_types<_Ty>>>,0>(_Iter,_Iter,const _Alloc &)' being compiled
+          with
+          [
+              _Ty=double,
+              _Iter=std::_Vector_iterator<std::_Vector_val<std::_Simple_types<double>>>,
+              _Alloc=std::allocator<char>
+          ]
+D:\PSS LAB\PSSLaboratorium\PSS1\PSS1\ModelARX.cpp(81,12): message : see reference to function template instantiation 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>::basic_string<std::_Vector_iterator<std::_Vector_val<std::_Simple_types<_Ty>>>,0>(_Iter,_Iter,const _Alloc &)' being compiled
+          with
+          [
+              _Ty=double,
+              _Iter=std::_Vector_iterator<std::_Vector_val<std::_Simple_types<double>>>,
+              _Alloc=std::allocator<char>
+          ]
+  PSS1.cpp
+D:\PSS LAB\PSSLaboratorium\PSS1\PSS1\ModelARX.h(4,10): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+D:\PSS LAB\PSSLaboratorium\PSS1\PSS1\PSS1.cpp(32,19): warning C4101: 'mop': unreferenced local variable
+  Regulator.cpp
+  Skok.cpp
+D:\PSS LAB\PSSLaboratorium\PSS1\PSS1\Skok.cpp(11,16): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
+  Generating Code...
+Skok.obj : error LNK2001: unresolved external symbol "public: virtual double __cdecl Generator::Generuj(void)" (?Generuj@Generator@@UEAANXZ)
+D:\PSS LAB\PSSLaboratorium\PSS1\x64\Debug\PSS1.exe : fatal error LNK1120: 1 unresolved externals

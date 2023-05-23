@@ -9,18 +9,33 @@ ModelARX::ModelARX(int rzA, int rzB,vector<double> mA, vector<double> mB, int op
 	dB = rzB;
 
 	//cout << mA.size() << " i " << rzA << endl;
-	if (mA.size() == rzA) {
-		A = mA;
+	try {
+		if (mA.size() == rzA) {
+			A = mA;
+		}
+		else {
+			throw(0);
+		}
 	}
-	else {
+	catch (vector<double> mA) {
 		cout << "rząd A niezgodny z macierzą A" << endl;
-		return;
 	}
 
+
 	//inicjalizacja macierzy B jeśli nie została ona podana
-	if (mB.size() == rzB) {
-		B = mB;
+	try {
+		if (mB.size() == rzB) {
+			B = mB;
+		}
+		else {
+			throw(1);
+		}
 	}
+	catch (vector<double> mB) {
+		cout << "rząd B niezgodny z macierzą B" << endl;
+	}
+
+
 
 	//inicjalizacja macierzy pamięci wyjść i wejść
 	for (int i = 0; i < rzB + op; i++) {
@@ -39,17 +54,17 @@ ModelARX::ModelARX(int rzA, int rzB,vector<double> mA, vector<double> mB, int op
 double ModelARX::Symuluj(double wartosc, double zaklocenie) {
 	double tempM = 0;
 	double tempL = 0;
-
+	//sprawdzic dla zmiennego d
 	for (int i = (u.size()) - 1 - 1 + d; i >= 0; i--) {
 		u[i + 1] = u[i];
-		//cout <<"u[1]"<< u[1] << endl;
+		cout <<"u[1]"<< u[1] << endl;
 	}
 	u[0] = wartosc;
-	//cout << "u[0]" << u[0] << endl;
+	cout << "u[0]" << u[0] << endl;
 	for (int i = 0; i < B.size(); i++)
 	{
 		tempL = tempL + (B[i] * u[i + d]);
-		//cout << "tempL dla i=" << i <<" wartosc: " << tempL << endl;
+		cout << "tempL dla i=" << i <<" wartosc: " << tempL << endl;
 	}
 	for (int i = 0; i < A.size() - 1; i++)
 	{

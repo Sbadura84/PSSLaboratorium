@@ -4,6 +4,7 @@
 #include "ModelARX.h"
 #include "Regulator.h"
 #include "testClass.h"
+#include "Skok.h"
 #include<iostream>
 #include <cstdlib>
 #include<time.h>
@@ -61,7 +62,7 @@ int main()
             }
             //cout << " mB = " << mB.size()<< endl;
 
-            modeleARX.push_back(ModelARX(mdA, mdB, mA, mB, 1));
+            modeleARX.push_back(ModelARX(mdA, mdB, mA, mB, 0));
             //modeleARX[0].wypisz();
             cout << endl << "Koniec iteracji" << endl;
             temp.clear();
@@ -70,7 +71,11 @@ int main()
         }
     } 
 
-
+    cout << "symuluj" << endl;
+    modeleARX[0].Symuluj(1, 0);
+    cout << endl;
+    modeleARX[1].wypisz();
+    
     //LAB 1 
     //Ręczna definicja modelu oraz regulatora
     /*
