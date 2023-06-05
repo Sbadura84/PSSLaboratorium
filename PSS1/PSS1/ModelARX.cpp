@@ -57,14 +57,14 @@ double ModelARX::Symuluj(double wartosc, double zaklocenie) {
 	//sprawdzic dla zmiennego d
 	for (int i = (u.size()) - 1 - 1 + d; i >= 0; i--) {
 		u[i + 1] = u[i];
-		cout <<"u[1]"<< u[1] << endl;
+		//cout <<"u[1]"<< u[1] << endl;
 	}
 	u[0] = wartosc;
 	cout << "u[0]" << u[0] << endl;
 	for (int i = 0; i < B.size(); i++)
 	{
 		tempL = tempL + (B[i] * u[i + d]);
-		cout << "tempL dla i=" << i <<" wartosc: " << tempL << endl;
+		//cout << "tempL dla i=" << i <<" wartosc: " << tempL << endl;
 	}
 	for (int i = 0; i < A.size() - 1; i++)
 	{

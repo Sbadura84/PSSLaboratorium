@@ -1,13 +1,13 @@
 #pragma once
-#include "Generator.h"
+#include "Sygnal.h"
 class Impuls :
-    public Generator
+    public Sygnal
 {
 private:
     int czestotliwoscPowtorzen;
 
 public:
-    double Generuj();
+    double Wyjscie();
     Impuls(int f = 0);
 };
 

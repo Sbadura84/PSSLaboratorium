@@ -7,7 +7,7 @@ Skok::Skok(double a, int f, double b) {
 	przesuniecie = b;
 }
 
-double Skok::Generuj(){
+double Skok::Wyjscie(){
 	double wyjscie;
 	int tempFloor = floor(double(mKrok / czestotliwoscZmiany));
 	if (tempFloor % 2 == 0) {

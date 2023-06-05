@@ -1,7 +1,7 @@
 #pragma once
-#include "Generator.h"
+#include "Sygnal.h"
 class Trojkat :
-    public Generator
+    public Sygnal
 {
 private:
     double amplituda;
@@ -9,7 +9,7 @@ private:
     double przesuniecie;
 
 public:
-    double Generuj();
+    double Wyjscie();
     Trojkat(double amplituda, int czasNarastania, double przesuniecie = 0);
 };
 

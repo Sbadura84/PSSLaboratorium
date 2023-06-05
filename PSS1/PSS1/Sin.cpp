@@ -8,7 +8,7 @@ Sin::Sin(double A, int czestotliwosc, double offset) {
 	przesuniecie = offset;
 }
 
-double Sin::Generuj() {
+double Sin::Wyjscie() {
 	double wyjscie = 0;
 
 	// 2pi = 1 cykl

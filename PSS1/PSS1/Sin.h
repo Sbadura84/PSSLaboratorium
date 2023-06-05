@@ -1,7 +1,7 @@
 #pragma once
-#include "Generator.h"
+#include "Sygnal.h"
 class Sin :
-    public Generator
+    public Sygnal
 {
     private:    
         double amplituda;
@@ -9,7 +9,7 @@ class Sin :
         double przesuniecie;
         float pi = 3.14;
 public:
-    double Generuj();
+    double Wyjscie();
     Sin(double amplituda, int czestotliwoscZmiany = 1, double przesuniecie = 0);
 };
 

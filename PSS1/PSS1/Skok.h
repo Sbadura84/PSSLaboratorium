@@ -1,14 +1,14 @@
 #pragma once
-#include "Generator.h"
+#include "Sygnal.h"
 class Skok :
-    public Generator
+    public Sygnal
 {
 private:
     double amplituda;
     int czestotliwoscZmiany; //co ile probek
     double przesuniecie;
 public:
-    double Generuj();
+    double Wyjscie();
     Skok(double amplituda, int czestotliwoscZmiany, double przesuniecie = 0);
 };
 
