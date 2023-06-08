@@ -136,7 +136,6 @@
     <ClCompile Include="Sin.cpp" />
     <ClCompile Include="siso.cpp" />
     <ClCompile Include="Skok.cpp" />
-    <ClCompile Include="testClass.cpp" />
     <ClCompile Include="Trojkat.cpp" />
   </ItemGroup>
   <ItemGroup>
@@ -148,7 +147,6 @@
     <ClInclude Include="Sin.h" />
     <ClInclude Include="siso.h" />
     <ClInclude Include="Skok.h" />
-    <ClInclude Include="testClass.h" />
     <ClInclude Include="Trojkat.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

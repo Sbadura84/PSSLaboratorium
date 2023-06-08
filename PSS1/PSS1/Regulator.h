@@ -4,7 +4,7 @@
 using namespace std;
 
 class Regulator :public siso {
-private:
+public:
     double P;
     double I;
     double D;

@@ -8,17 +8,18 @@ ModelARX::ModelARX(int rzA, int rzB,vector<double> mA, vector<double> mB, int op
 	dA = rzA;
 	dB = rzB;
 
-	//cout << mA.size() << " i " << rzA << endl;
 	try {
 		if (mA.size() == rzA) {
 			A = mA;
 		}
 		else {
-			throw(0);
+			throw(rzA);
 		}
 	}
-	catch (vector<double> mA) {
-		cout << "rząd A niezgodny z macierzą A" << endl;
+
+	//catch (vector<double> mA) {
+	catch (int rzadOdczytany) {
+		cout << "rząd A niezgodny z macierzą A, rząd macierzy: "<< mA.size() << " podany rząd: "<< rzadOdczytany << endl;
 	}
 
 
@@ -60,7 +61,7 @@ double ModelARX::Symuluj(double wartosc, double zaklocenie) {
 		//cout <<"u[1]"<< u[1] << endl;
 	}
 	u[0] = wartosc;
-	cout << "u[0]" << u[0] << endl;
+	//cout << "u[0]" << u[0] << endl;
 	for (int i = 0; i < B.size(); i++)
 	{
 		tempL = tempL + (B[i] * u[i + d]);
@@ -74,7 +75,7 @@ double ModelARX::Symuluj(double wartosc, double zaklocenie) {
 		y[i + 1] = y[i];
 	}
 	y[0] = tempL + tempM + zaklocenie;
-	cout << "Sygnał wyjściowy obiektu: " << y[0] << endl;
+	//cout << "Sygnał wyjściowy obiektu: " << y[0] << endl;
 	return y[0];
 }
 void ModelARX::wypisz() {

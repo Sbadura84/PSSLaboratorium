@@ -5,10 +5,14 @@
 double Regulator::Symuluj(double wejscie, double zaklocenie) {
 	u[1] = u[0];
 	u[0] = wejscie; 
-	//cout << "wejscie regulator"<< u[0] << endl;
 	double dU = u[0] - u[1];
-	double wyjscie = P * u[0] + I * (u[0] * u[1]) / 2 + D * dU;
-	//   wyjscie = wejscie * PID
+	double temp =0;
+	for (int i = 1; i < u.size(); i++) {
+		temp += u[i];
+	}
+	double Iwartość = temp * I;
+
+	double wyjscie = P * u[0] + Iwartość + D * dU;
 	cout << "sygnał wyjściowy regulatora " << wyjscie << endl;
 	return wyjscie;
 }

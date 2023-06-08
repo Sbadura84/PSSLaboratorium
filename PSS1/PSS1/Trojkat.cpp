@@ -17,22 +17,18 @@ double Trojkat::Wyjscie() {
 	case 0:
 		wyjscie = amplituda * mKrok / czestotliwoscZmiany;
 		mKrok++;
-		cout << "Sygnal Trojkat:" << wyjscie << endl;
 		return wyjscie;
 	case 1:
 		wyjscie = amplituda * (1-mKrok / czestotliwoscZmiany);
 		mKrok++;
-		cout << "Sygnal Trojkat:" << wyjscie << endl;
 		return wyjscie;
 	case 2:
 		wyjscie = -amplituda * mKrok / czestotliwoscZmiany;
 		mKrok++;
-		cout << "Sygnal Trojkat:" << wyjscie << endl;
 		return wyjscie;
 	case 3:
 		wyjscie = -amplituda * (1 - mKrok / czestotliwoscZmiany);
 		mKrok++;
-		cout << "Sygnal Trojkat:" << wyjscie << endl;
 		return wyjscie;
 	default:
 		cout << "Blad podczas generacji sygnalu trojkatnego" << endl;
