@@ -1,43 +1,13 @@
-﻿  ModelARX.cpp
-D:\PSS LAB\PSSLaboratorium\PSS1\PSS1\ModelARX.h(4,10): warning C4067: unexpected tokens following preprocessor directive - expected a newline
-D:\PSS LAB\PSSLaboratorium\PSS1\PSS1\ModelARX.cpp(59,2): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
-D:\PSS LAB\PSSLaboratorium\PSS1\PSS1\ModelARX.cpp(74,2): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
-D:\Microsoft VS\VC\Tools\MSVC\14.35.32215\include\xstring(2859,53): warning C4244: 'argument': conversion from 'double' to 'const _Elem', possible loss of data
-          with
-          [
-              _Elem=char
-          ]
-D:\Microsoft VS\VC\Tools\MSVC\14.35.32215\include\xstring(2718,1): message : see reference to function template instantiation 'void std::basic_string<char,std::char_traits<char>,std::allocator<char>>::_Construct_from_iter<double*,double*,_Size_type>(_Iter,const _Sent,_Size)' being compiled
-          with
-          [
-              _Size_type=unsigned __int64,
-              _Iter=double *,
-              _Sent=double *,
-              _Size=unsigned __int64
-          ]
-D:\Microsoft VS\VC\Tools\MSVC\14.35.32215\include\xstring(2718,37): message : see reference to function template instantiation 'void std::basic_string<char,std::char_traits<char>,std::allocator<char>>::_Construct_from_iter<double*,double*,_Size_type>(_Iter,const _Sent,_Size)' being compiled
-          with
-          [
-              _Size_type=unsigned __int64,
-              _Iter=double *,
-              _Sent=double *,
-              _Size=unsigned __int64
-          ]
-D:\PSS LAB\PSSLaboratorium\PSS1\PSS1\ModelARX.cpp(82): message : see reference to function template instantiation 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>::basic_string<std::_Vector_iterator<std::_Vector_val<std::_Simple_types<_Ty>>>,0>(_Iter,_Iter,const _Alloc &)' being compiled
-          with
-          [
-              _Ty=double,
-              _Iter=std::_Vector_iterator<std::_Vector_val<std::_Simple_types<double>>>,
-              _Alloc=std::allocator<char>
-          ]
-D:\PSS LAB\PSSLaboratorium\PSS1\PSS1\ModelARX.cpp(82,12): message : see reference to function template instantiation 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>::basic_string<std::_Vector_iterator<std::_Vector_val<std::_Simple_types<_Ty>>>,0>(_Iter,_Iter,const _Alloc &)' being compiled
-          with
-          [
-              _Ty=double,
-              _Iter=std::_Vector_iterator<std::_Vector_val<std::_Simple_types<double>>>,
-              _Alloc=std::allocator<char>
-          ]
-  Trojkat.cpp
-D:\PSS LAB\PSSLaboratorium\PSS1\PSS1\Trojkat.cpp(14,16): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
-  Generating Code...
-  PSS1.vcxproj -> D:\PSS LAB\PSSLaboratorium\PSS1\x64\Debug\PSS1.exe
+﻿  PSS1.cpp
+D:\Uczelnia\PSS\PSS1\PSS1\ModelARX.h(4,10): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+D:\Uczelnia\PSS\PSS1\PSS1\Sin.h(13): warning C4305: 'initializing': truncation from 'double' to 'float'
+D:\Uczelnia\PSS\PSS1\PSS1\PSS1.cpp(50,27): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+D:\Uczelnia\PSS\PSS1\PSS1\PSS1.cpp(59,28): warning C4244: 'argument': conversion from 'float' to 'const unsigned __int64', possible loss of data
+D:\Uczelnia\PSS\PSS1\PSS1\PSS1.cpp(59,33): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+D:\Uczelnia\PSS\PSS1\PSS1\PSS1.cpp(61,24): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
+D:\Uczelnia\PSS\PSS1\PSS1\PSS1.cpp(67,47): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+D:\Uczelnia\PSS\PSS1\PSS1\PSS1.cpp(67,42): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+D:\Uczelnia\PSS\PSS1\PSS1\PSS1.cpp(113,45): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+D:\Uczelnia\PSS\PSS1\PSS1\PSS1.cpp(114,43): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+D:\Uczelnia\PSS\PSS1\PSS1\PSS1.cpp(27,21): warning C4101: 'mop': unreferenced local variable
+  PSS1.vcxproj -> D:\Uczelnia\PSS\PSS1\x64\Debug\PSS1.exe
